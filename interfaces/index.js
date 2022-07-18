@@ -17,6 +17,8 @@ function _object(val, interface) {
         })
 
     }
+
+    return val;
 }
 
 
@@ -73,4 +75,6 @@ const personInterface = {
 }
 
 const person1 = _object({ name: "anu"}, personInterface)
+
+
 
