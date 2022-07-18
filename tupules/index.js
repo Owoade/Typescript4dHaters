@@ -11,14 +11,10 @@ function _tupule(val, arrOfTypes) {
     }
 
     val.map((_, i) => {
-        if (Array.isArray(_) && Array.isArray(arrOfTypes[i])) {
+        if ( ( Array.isArray(_) && Array.isArray(arrOfTypes[i]) ) || typeof _ === arrOfTypes[i]  ) {
             return 
         }
-
-        if (typeof _ === arrOfTypes[i]) {
-            return 
-        }
-
+        
         throw new Error( `Tupple Error: Type of ${ typeof _ } at position ${i} is not equal to type ${ Array.isArray(arrOfTypes[i]) ? "Array" :  typeof arrOfTypes[i] } ` )
     })
 
