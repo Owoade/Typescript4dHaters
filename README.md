@@ -1,2 +1,8 @@
 # Typescript4dHaters
- A simple implementation of types with JS functions. Disclaimer: This is never an option 😂, don't even think of it , TS all the way 🚀🚀
+
+ 
+## literals
+
+```
+const x = _number(2) // no Error, assigns the value of two to x
+```
