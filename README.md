@@ -25,3 +25,18 @@ const myTupple = _tupule([1, "age", true, [1, 2, 3] ], ["number", "string", "boo
 
 ```
 
+### interface
+
+```
+const objectName = _object(object, interface);
+
+const userInterface = {
+ username: "string",
+ id: "number",
+ isAdmin: "boolean"
+}
+
+const user = _object({ username: "anu12", id: 023, isAdmin: true}, userInterface ) // no Error
+
+```
+
